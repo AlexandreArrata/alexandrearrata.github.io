@@ -43,24 +43,24 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to My new Portfolio</h1>
+    <h1>Welcome to My Portfolio</h1>
     <p>By Alexandre Arrata</p>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About Me</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
     <h2>About This Site</h2>
     <p>This is my live portfolio site created for Assignment 1 of CSCI 713: Software Development Processes.</p>
-    <p>More content will be added as I develop the site further as directed by Professor Ajay Kumar Jha :) .</p>
+    <p>More content will be added as I develop the site further as directed by Professor Ajay Kumar Jha.</p>
   </main>
 
   <footer>
-    <p>&copy; Alexandre Arrata , fall 2025 </p>
+    <p>&copy; 2025 Alexandre Arrata</p>
   </footer>
 </body>
 </html>
