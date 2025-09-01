@@ -1,50 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexandre Arrata - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alexandre Arrata — Portfolio</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4CAF50, #2c3e50);
-      color: #333;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    :root{
+      --bg:#f6f7fb; --fg:#1f2937; --muted:#6b7280;
+      --brand:#2563eb; --card:#ffffff; --line:#e5e7eb;
     }
-    .card {
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-      text-align: center;
-      max-width: 600px;
-      width: 90%;
+    *{box-sizing:border-box}
+    body{
+      margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      color:var(--fg); background:var(--bg);
     }
-    h1 {
-      margin-bottom: 20px;
-      color: #2c3e50;
+    header{
+      position:sticky; top:0; z-index:5; background:#fffcc0;
+      background:#ffffffcc; backdrop-filter:saturate(180%) blur(6px);
+      border-bottom:1px solid var(--line);
     }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
+    .wrap{max-width:1100px; margin:0 auto; padding:0 18px}
+    .nav{display:flex; align-items:center; gap:18px; padding:12px 0}
+    .nav a{color:var(--fg); text-decoration:none; font-weight:600}
+    .nav a:hover{color:var(--brand)}
+    .grid{
+      display:grid; grid-template-columns:300px 1fr; gap:28px;
+      padding:28px 18px; max-width:1100px; margin:0 auto;
     }
-    footer {
-      margin-top: 20px;
-      font-size: 0.9rem;
-      color: #777;
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+    .card{
+      background:var(--card); border:1px solid var(--line);
+      border-radius:14px; padding:18px; box-shadow:0 1px 2px rgba(0,0,0,.04);
+    }
+    .profile{
+      display:flex; flex-direction:column; gap:14px;
+    }
+    .photo{
+      width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:10px;
+      background:#ddd; display:block;
+    }
+    h1{margin:0; font-size:1.9rem; line-height:1.25}
+    .role{font-weight:700; margin:.3rem 0}
+    .small{color:var(--muted); margin:0}
+    .badges{display:flex; flex-wrap:wrap; gap:8px}
+    .badge{
+      font-size:.78rem; padding:6px 10px; border-radius:999px; border:1px solid var(--line);
+      background:#fafafa;
+    }
+    section{margin-bottom:26px}
+    section h2{
+      margin:0 0 8px; font-size:1.2rem; text-transform:uppercase; letter-spacing:.04em;
+      color:#0f172a
+    }
+    .list{display:grid; gap:14px}
+    .item b{color:#0f172a}
+    a{color:var(--brand)}
+    footer{
+      border-top:1px solid var(--line); margin-top:24px; padding:20px 0; color:var(--muted);
+      text-align:center;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Hello, I’m Alexandre Arrata 👋</h1>
-    <p>Welcome to my portfolio site for <strong>CSCI 713 Assignment 1</strong>.</p>
-    <p>More features will be added as part of the course project.</p>
-    <footer>&copy; 2025 Alexandre Arrata | Built with GitHub Pages</footer>
-  </div>
+  <header>
+    <div class="wrap">
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="grid">
+    <!-- LEFT: profile card -->
+    <aside class="card profile">
+      <!-- Replace profile.jpg with your image file placed in repo root -->
+      <img src="profile.jpg" alt="Portrait of Alexandre Arrata" class="photo" />
+      <div>
+        <h1>Alexandre Arrata</h1>
+        <p class="role">Graduate Student · NDSU</p>
+        <p class="small">CSCI 713 · Software Development Processes</p>
+      </div>
+
+      <section>
+        <h2>Affiliation</h2>
+        <p class="small">
+          Dept. of Computer Science, North Dakota State University<br/>
+          Fargo, ND, USA
+        </p>
+      </section>
+
+      <section>
+        <h2>Focus</h2>
+        <div class="badges">
+          <span class="badge">Software Process</span>
+          <span class="badge">DevOps</span>
+          <span class="badge">Security</span>
+          <span class="badge">GitHub Pages</span>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p class="small">📧 <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p class="small">🔗 <a href="https://github.com/alexandrearrata">GitHub</a> ·
+           <a href="https://www.linkedin.com/">LinkedIn</a></p>
+      </section>
+    </aside>
+
+    <!-- RIGHT: main content -->
+    <div class="card">
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I’m a graduate student focusing on practical software development processes.
+          This site is part of <b>Assignment 1</b> and demonstrates setup with
+          <b>GitHub Pages</b>, <b>Issues</b>, and a <b>Project board</b>.
+        </p>
+      </section>
+
+      <section id="interests">
+        <h2>Interests</h2>
+        <ul class="list">
+          <li class="item"><b>Planning & Kanban:</b> Using Issues, labels, and project boards to manage work.</li>
+          <li class="item"><b>CI/CD basics:</b> Keeping sites deployable with simple, reproducible steps.</li>
+          <li class="item"><b>Secure SDLC:</b> Incorporating lightweight security checks early.</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="list">
+          <div class="item">
+            <b>Portfolio Site (This Project)</b> — Deployed via GitHub Pages.  
+            <div class="small">Repo: <a href="https://github.com/alexandrearrata/alexandrearrata.github.io">alexandrearrata.github.io</a></div>
+          </div>
+          <div class="item">
+            <b>Backlog Setup</b> — Issues created with labels
+            (<code>documentation</code>, <code>enhancement</code>) and assigned to me.
+          </div>
+          <div class="item">
+            <b>Project Board</b> — Kanban with <i>To do · In progress · Done</i>, populated from issues.
+          </div>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Writing / Notes</h2>
+        <ul class="list">
+          <li class="item"><b>README overview:</b> short description of the site and assignment scope.</li>
+          <li class="item"><b>Process reflections:</b> brief notes on what went well during setup.</li>
+        </ul>
+      </section>
+
+      <footer>
+        © 2025 Alexandre Arrata · Built with GitHub Pages
+      </footer>
+    </div>
+  </main>
 </body>
 </html>
