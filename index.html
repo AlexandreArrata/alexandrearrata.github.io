@@ -16,10 +16,14 @@
       background: radial-gradient(90% 120% at 0% 0%, var(--bg2), var(--bg));
     }
     header{
-      padding:48px 16px; text-align:center;
+      padding:36px 16px; text-align:center; position:relative;
     }
     header h1{margin:0 0 8px; font-weight:700; letter-spacing:.2px}
     header p{margin:0; color:var(--muted)}
+    header img{
+      position:absolute; top:16px; right:16px; width:90px; height:90px;
+      border-radius:50%; border:2px solid var(--accent); object-fit:cover;
+    }
     .wrap{max-width:880px; margin:0 auto; padding:24px 16px 56px}
     .card{
       background:var(--card); border:1px solid rgba(255,255,255,.06);
@@ -30,11 +34,6 @@
     a:hover{text-decoration:underline}
     ul{margin:.2rem 0 .2rem 1rem; padding:0; line-height:1.7}
     .done{color:var(--ok); font-weight:600}
-    .kpis{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px}
-    .kpis span{
-      background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08);
-      padding:6px 10px; border-radius:999px; font-size:.9rem; color:var(--muted)
-    }
     footer{color:var(--muted); text-align:center; margin-top:22px; font-size:.9rem}
   </style>
 </head>
@@ -42,6 +41,7 @@
   <header>
     <h1>Assignment 1: Project Setup & Planning</h1>
     <p>CSCI 713 · Live Portfolio on GitHub Pages</p>
+    <img src="IMG_9350.jpg" alt="Profile photo">
   </header>
 
   <main class="wrap">
@@ -50,38 +50,34 @@
       <p><a href="https://github.com/AlexandreArrata/alexandrearrata.github.io" target="_blank">
         alexandrearrata.github.io
       </a></p>
-      <div class="kpis">
-        <span>Public repo ✅</span>
-        <span>README.md & .gitignore ✅</span>
-        <span>Pages enabled ✅</span>
-      </div>
     </section>
 
     <section class="card">
-      <h2>Issues Created</h2>
+      <h2>Issues Created (8)</h2>
       <ul>
-        <li class="done">✔ Update README with project overview <em>(documentation)</em></li>
-        <li>Create base HTML template for the site <em>(enhancement)</em></li>
-        <li>Customize homepage content <em>(enhancement)</em></li>
-        <li>Add About Me page <em>(enhancement)</em></li>
-        <li>Add Contact page <em>(documentation)</em></li>
+        <li class="done">✔ Update README with project overview (documentation)</li>
+        <li>Create base HTML template for the site (enhancement)</li>
+        <li>Customize homepage content (enhancement)</li>
+        <li>Add About Me page (enhancement)</li>
+        <li>Add Contact page (documentation)</li>
+        <li>Add Portfolio Projects section (enhancement)</li>
+        <li>Add CSS styling for better layout (enhancement)</li>
+        <li>Add Footer with contact info (documentation)</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>Project Board</h2>
-      <p><a href="https://github.com/users/AlexandreArrata/projects/1">
+      <p><a href="https://github.com/AlexandreArrata/alexandrearrata.github.io/projects" target="_blank">
         View Project Board
       </a></p>
-      <!-- Optional: drop a screenshot file into your repo and uncomment:
-      <img src="assets/board.png" alt="Project board screenshot" style="width:100%;border-radius:10px;margin-top:10px"> -->
     </section>
 
     <section class="card">
       <h2>Deliverables</h2>
       <ul>
         <li>Public repository created</li>
-        <li>5 issues added with labels</li>
+        <li>8 issues added with labels (documentation & enhancement)</li>
         <li>Kanban project board set up with tasks</li>
         <li class="done">README updated with project overview</li>
       </ul>
