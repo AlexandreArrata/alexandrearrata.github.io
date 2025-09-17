@@ -2,36 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 1 - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #00332d, #004d40);
+      color: white;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      margin-top: 0;
+      color: #80deea;
+    }
+    a {
+      color: #80cbc4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    .completed {
+      color: #4caf50;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="card">
+      <h1>Assignment 1: Project Setup and Planning</h1>
+      <p><strong>Objective:</strong> Create a GitHub Pages portfolio site and apply project management practices.</p>
+    </div>
 
-  <h1>Assignment 1: Project Setup and Planning</h1>
-  <p><strong>Objective:</strong> Create a GitHub Pages portfolio site and apply project management practices.</p>
+    <div class="card">
+      <h2>Repository</h2>
+      <p>
+        <a href="https://github.com/AlexandreArrata/alexandrearrata.github.io" target="_blank">
+          alexandrearrata.github.io
+        </a>
+      </p>
+    </div>
 
-  <h2>Repository</h2>
-  <p><a href="https://github.com/AlexandreArrata/alexandrearrata.github.io" target="_blank">
-    alexandrearrata.github.io
-  </a></p>
+    <div class="card">
+      <h2>Issues Created</h2>
+      <ul>
+        <li class="completed">✔ Update README with project overview (documentation)</li>
+        <li>Create base HTML template for the site (enhancement)</li>
+        <li>Customize homepage content (enhancement)</li>
+        <li>Add About Me page (enhancement)</li>
+        <li>Add Contact page (documentation)</li>
+      </ul>
+    </div>
 
-  <h2>Issues Created</h2>
-  <ul>
-    <li>Update README with project overview (documentation)</li>
-    <li>Create base HTML template for the site (enhancement)</li>
-    <li>Customize homepage content (enhancement)</li>
-    <li>Add About Me page (enhancement)</li>
-    <li>Add Contact page (documentation)</li>
-  </ul>
+    <div class="card">
+      <h2>Project Board</h2>
+      <p>
+        <a href="https://github.com/AlexandreArrata/alexandrearrata.github.io/projects" target="_blank">
+          View Project Board
+        </a>
+      </p>
+    </div>
 
-  <h2>Project Board</h2>
-  <p><a href="https://github.com/AlexandreArrata/alexandrearrata.github.io/projects" target="_blank">
-    View Project Board
-  </a></p>
-
-  <h2>Deliverables</h2>
-  <p>✔ Public repository created<br>
-     ✔ 5 issues added with labels<br>
-     ✔ Kanban project board set up with tasks</p>
-
+    <div class="card">
+      <h2>Deliverables</h2>
+      <p>✔ Public repository created<br>
+         ✔ 5 issues added with labels<br>
+         ✔ Kanban project board set up with tasks<br>
+         ✔ README updated with project overview</p>
+    </div>
+  </div>
 </body>
 </html>
