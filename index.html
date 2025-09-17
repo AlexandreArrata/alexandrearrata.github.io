@@ -23,6 +23,7 @@
     header img{
       position:absolute; top:16px; right:16px; width:90px; height:90px;
       border-radius:50%; border:2px solid var(--accent); object-fit:cover;
+      background:#0b2e2a;
     }
     .wrap{max-width:880px; margin:0 auto; padding:24px 16px 56px}
     .card{
@@ -41,14 +42,16 @@
   <header>
     <h1>Assignment 1: Project Setup & Planning</h1>
     <p>CSCI 713 · Live Portfolio on GitHub Pages</p>
-    <!-- Use URL-encoded space so the image loads -->
-    <img src="IMG_9350%20copie.jpg" alt="Profile photo">
+
+    <!-- Try exact filename with space; if it fails, fall back to profile.jpg (rename your file if needed) -->
+    <img src="IMG_9350%20copie.jpg" alt="Profile photo"
+         onerror="this.onerror=null; this.src='profile.jpg';" />
   </header>
 
   <main class="wrap">
     <section class="card">
       <h2>Repository</h2>
-      <p><a href="https://github.com/AlexandreArrata/alexandrearrata.github.io" target="_blank">
+      <p><a href="https://github.com/AlexandreArrata/alexandrearrata.github.io" target="_blank" rel="noopener">
         alexandrearrata.github.io
       </a></p>
     </section>
@@ -56,20 +59,20 @@
     <section class="card">
       <h2>Issues Created (8)</h2>
       <ul>
-        <li class="done">✔ Update README with project overview (documentation)</li>
-        <li>Create base HTML template for the site (enhancement)</li>
-        <li>Customize homepage content (enhancement)</li>
-        <li>Add About Me page (enhancement)</li>
-        <li>Add Contact page (documentation)</li>
-        <li>Add Portfolio Projects section (enhancement)</li>
-        <li>Add CSS styling for better layout (enhancement)</li>
-        <li>Add Footer with contact info (documentation)</li>
+        <li class="done">✔ Update README with project overview <em>(documentation)</em></li>
+        <li>Create base HTML template for the site <em>(enhancement)</em></li>
+        <li>Customize homepage content <em>(enhancement)</em></li>
+        <li>Add About Me page <em>(enhancement)</em></li>
+        <li>Add Contact page <em>(documentation)</em></li>
+        <li>Add Portfolio Projects section <em>(enhancement)</em></li>
+        <li>Add CSS styling for better layout <em>(enhancement)</em></li>
+        <li>Add Footer with contact info <em>(documentation)</em></li>
       </ul>
     </section>
 
     <section class="card">
       <h2>Project Board</h2>
-      <p><a href="https://github.com/users/AlexandreArrata/projects/1" target="_blank">
+      <p><a href="https://github.com/users/AlexandreArrata/projects/1" target="_blank" rel="noopener">
         View Project Board
       </a></p>
     </section>
